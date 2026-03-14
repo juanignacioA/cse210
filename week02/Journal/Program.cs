@@ -57,6 +57,13 @@ class Program
                 string fileName = Console.ReadLine();
                 theJournal.SaveFile(fileName);
             }
+            else
+            {
+                if(choice != "5"){
+                    Console.WriteLine("\nInvalid option. Please choose a number from 1 to 5.");
+                }
+                
+            }
         }
     }
 }

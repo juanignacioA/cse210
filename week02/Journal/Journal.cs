@@ -27,20 +27,28 @@ public class Journal
 
     public void LoadFile(string file)
     {
-        _entries.Clear();
-
-        string[] lines = System.IO.File.ReadAllLines(file);
-
-        foreach (string line in lines)
+        if (File.Exists(file))
         {
-            string[] parts = line.Split("|");
+            _entries.Clear();
 
-            Entry newEntry = new Entry();
-            newEntry._date = parts[0];
-            newEntry._txPrompt = parts[1];
-            newEntry._txEntry = parts[2];
+            string[] lines = System.IO.File.ReadAllLines(file);
 
-            _entries.Add(newEntry);
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split("|");
+
+                Entry newEntry = new Entry();
+                newEntry._date = parts[0];
+                newEntry._txPrompt = parts[1];
+                newEntry._txEntry = parts[2];
+
+                _entries.Add(newEntry);
+            }
+            Console.WriteLine("Journal loaded successfully!");
+        }
+        else
+        {
+            Console.WriteLine("\n[Notice]: That file doesn't exist yet. Try saving a file first.");
         }
     }
 
