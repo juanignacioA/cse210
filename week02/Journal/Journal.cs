@@ -29,6 +29,7 @@ public class Journal
     {
         if (File.Exists(file))
         {
+            // Exceeding Requirements
             _entries.Clear();
 
             string[] lines = System.IO.File.ReadAllLines(file);

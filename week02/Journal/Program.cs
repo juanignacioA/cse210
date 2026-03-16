@@ -1,5 +1,8 @@
 using System;
 
+// Exceeding Requirements: Added file validation to handle "File Not Found" errors 
+// and implemented logic to clear current memory before loading new data from a file.
+// (Line 65 from Program.cs and Line 33 from Journal.cs)
 
 class Program
 {
@@ -60,6 +63,7 @@ class Program
             else
             {
                 if(choice != "5"){
+                    // Exceeding Requirement
                     Console.WriteLine("\nInvalid option. Please choose a number from 1 to 5.");
                 }
                 
