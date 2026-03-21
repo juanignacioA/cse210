@@ -1,5 +1,7 @@
-using System;
+// I implemented a logic that filters out already hidden words, preventing empty turns when pressing enter.
+// Line 17 from Word.cs and  Line 28 from Scripture.cs.
 
+using System;
 class Program
 {
     static void Main(string[] args)
