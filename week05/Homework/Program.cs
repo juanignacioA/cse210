@@ -4,10 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Assignment assignment1 = new Assignment("Ignacio", "Math");
-
-        Console.WriteLine(assignment1.GetSummary());
-
         Assignment assignment2 = new Assignment("Ignacio Silva", "Adition");
         Console.WriteLine(assignment2.GetSummary());
 
