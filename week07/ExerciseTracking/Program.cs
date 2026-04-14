@@ -9,9 +9,9 @@ namespace ExerciseTracking
         {
             List<Activity> activities = new List<Activity>();
 
-            activities.Add(new Running("03 Nov 2022", 30, 4.8));
-            activities.Add(new StationaryBicycle("03 Nov 2022", 30, 20.0));
-            activities.Add(new Swimming("03 Nov 2022", 30, 20));
+            activities.Add(new Running("25 May 2025", 30, 4.8));
+            activities.Add(new StationaryBicycle("25 May 2025", 30, 20.0));
+            activities.Add(new Swimming("25 May 2025", 30, 20));
 
             foreach (Activity activity in activities)
             {
